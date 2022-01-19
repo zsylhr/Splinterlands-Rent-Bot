@@ -1,5 +1,8 @@
 # Splinterlands-Rent-Bot
 A bot can help you rent Splinterlands cards in PeakMonsters
+
+Download from the release
+
 explain:
 
 4 functions, through setting settings Txt file
