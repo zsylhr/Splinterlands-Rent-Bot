@@ -43,20 +43,30 @@ active2
 This bot will charge some gas which depends on the power you want to rent.
 
 说明：
+
 4种功能，通过设置settings.txt文件中function的值来进行选择
+
 function:0   ---  授权账户给PeakMonster租卡，每个账户只用授权一次，如果之前已经在网站上进行过授权，不需要再授权
+
 function:1   ---  设置租卡的bid, 参数分别是power的上下范围，BID的值(一个dec租多少power的卡)，租的每张卡的最低power, 多线程模式，建议设置不要超过3
+
 function:2   ---  取消bid，使你设置的bid失效
+
 function:3   ---  退租卡片，pk网站租卡是两天的，如果有两天卡，使用此功能会自动退一天
 
+
 function 0 和 2 不收取手续费;
+
 function 1 手续费为 1+power/3000 dec;
+
 function 3 手续费为 2 dec;
 
 注：只有function:1才需要设置bid的参数，其余功能只用设置线程数
 
 账户：user.txt中存放用户名，以英文逗号隔开，
+
 如： aaa,bbb,ccc,ddd
+
 或者：
 aaa,
 bbb,
@@ -64,6 +74,7 @@ ccc,
 ddd
 
 密码：password.txt中存放posting_key与active_key，每个账户的两个密码都要放在此文件中，且不能重复，格式与user.txt相同
+
 posting_key与active_key位置随意，可任意排放，只要中间以英文逗号隔开即可
 
 post1,
