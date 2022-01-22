@@ -5,7 +5,10 @@ Download from the release
 
 explain:
 
-4 functions, through setting settings Txt file
+4 functions, through setting settings.txt file
+Function 0 and 2 doesn't need gas
+Function 1 : 1+power/3000 dec
+Function 3 : 2 dec
 
 Function: 0 --- authorize an account to rent a card to peakmonster. Each account can only be authorized once. If it has been authorized on the website before, it does not need to be re authorized
 
@@ -13,7 +16,7 @@ Function: 1 --- set the bid of the leased card. The parameters are the upper and
 
 Function: 2 --- cancel the bid and invalidate the bid you set
 
-Function: 3 --- rent return card. PK website rents a card for two days. If there is a card for two days, this function will automatically return it for one day
+Function: 3 --- cancel rental card. PK website rents a card for two days. If there is a card for two days, this function will automatically return it for one day
 
 Note: only function: 1 needs to set the bid parameter, and other functions only need to set the number of threads
 
@@ -45,6 +48,10 @@ function:0   ---  授权账户给PeakMonster租卡，每个账户只用授权一
 function:1   ---  设置租卡的bid, 参数分别是power的上下范围，BID的值(一个dec租多少power的卡)，租的每张卡的最低power, 多线程模式，建议设置不要超过3
 function:2   ---  取消bid，使你设置的bid失效
 function:3   ---  退租卡片，pk网站租卡是两天的，如果有两天卡，使用此功能会自动退一天
+
+function 0 和 1 不收取手续费
+function 1 手续费为 1+power/3000 dec
+function 3 手续费为 2 dec
 
 注：只有function:1才需要设置bid的参数，其余功能只用设置线程数
 
