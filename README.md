@@ -49,9 +49,9 @@ function:1   ---  设置租卡的bid, 参数分别是power的上下范围，BID�
 function:2   ---  取消bid，使你设置的bid失效
 function:3   ---  退租卡片，pk网站租卡是两天的，如果有两天卡，使用此功能会自动退一天
 
-function 0 和 1 不收取手续费
-function 1 手续费为 1+power/3000 dec
-function 3 手续费为 2 dec
+function 0 和 2 不收取手续费;
+function 1 手续费为 1+power/3000 dec;
+function 3 手续费为 2 dec;
 
 注：只有function:1才需要设置bid的参数，其余功能只用设置线程数
 
