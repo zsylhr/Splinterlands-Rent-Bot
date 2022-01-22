@@ -6,8 +6,11 @@ Download from the release
 explain:
 
 4 functions, through setting settings.txt file
+
 Function 0 and 2 doesn't need gas
+
 Function 1 : 1+power/3000 dec
+
 Function 3 : 2 dec
 
 Function: 0 --- authorize an account to rent a card to peakmonster. Each account can only be authorized once. If it has been authorized on the website before, it does not need to be re authorized
@@ -23,10 +26,15 @@ Note: only function: 1 needs to set the bid parameter, and other functions only 
 Account: user.txt, separated by English commas,
 
 Such as aaa,bbb,ccc,ddd
+
 Or:
+
 aaa,
+
 bbb,
+
 ccc,
+
 ddd
 
 
@@ -34,10 +42,15 @@ Password: posting_Key and active_Key, the two passwords of each account should b
 posting_Key and active_Key can be placed at random and can be arranged at will, as long as the middle is separated by English commas
 
 post1,
+
 post2,
+
 active3,
+
 post3,
+
 active1,
+
 active2
 
 This bot will charge some gas which depends on the power you want to rent.
@@ -68,9 +81,13 @@ function 3 手续费为 2 dec;
 如： aaa,bbb,ccc,ddd
 
 或者：
+
 aaa,
+
 bbb,
+
 ccc,
+
 ddd
 
 密码：password.txt中存放posting_key与active_key，每个账户的两个密码都要放在此文件中，且不能重复，格式与user.txt相同
@@ -78,10 +95,15 @@ ddd
 posting_key与active_key位置随意，可任意排放，只要中间以英文逗号隔开即可
 
 post1,
+
 post2,
+
 active3,
+
 post3,
+
 active1,
+
 active2
 
 脚本会收取一些手续费，手续费的数量与你租卡的power值有关，但与你的租金相比会很少
